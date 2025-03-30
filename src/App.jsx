@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from "react";
-import emergency_contacts from "./data/contact.json";
-import ContactList from "./pages/personList";
-import EmergencyContactList from "./pages/personList";
+import React, { useEffect, useState } from 'react'
+import emergency_contacts from "./data/contact.json"
+import { HomeRouter } from './routers'
+import { Route, Routes, useRoutes } from 'react-router'
 
 const App = () => {
-  console.log(emergency_contacts);
+  const HomeRouting = useRoutes(HomeRouter);''
   return (
     <div>
-      <EmergencyContactList />
+      <Routes>
+        <Route path='/*' element={HomeRouting}/>
+      </Routes>
     </div>
   );
 };

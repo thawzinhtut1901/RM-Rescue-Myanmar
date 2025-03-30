@@ -1,0 +1,165 @@
+{
+    "free_phone_battery": [
+        {
+            "region": "ရန်ကုန်",
+            "places": [
+                {
+                    "name": "MobiWorld Mobile - ကျောက်တံတား",
+                    "url": "https://www.facebook.com/share/p/1LEfGg1v49/",
+                    "address": "အမှတ် (၃၆၃/၃၆၅)၊ (၃၈)လမ်းနှင့် ဆိပ်ကမ်းသာလမ်းကြား၊ မဟာဗန္ဓုလလမ်းမပေါ်၊ ကျောက်တံတားမြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/UkiL28iNy87CAHh1A"
+                },
+                {
+                    "name": "Zaw Zaw Mobile - Yangon မင်္ဂလာတောင်ညွန့်",
+                    "url": "https://www.facebook.com/share/p/18XHFyLdwA/",
+                    "address": "အမှတ် (၄၃၈)၊ သိမ်ဖြူလမ်း၊ မင်္ဂလာတောင်ညွန့်မြို့နယ်။ (သိမ်ဖြူဈေးမှတ်တိုင်အနီး)",
+                    "map": "https://maps.app.goo.gl/n93DoJmca7QrC4CT7"
+                },
+                {
+                    "name": "Mobile Ayeyarwaddy - မင်္ဂလာတောင်ညွန့်",
+                    "url": "https://www.facebook.com/share/p/15E6UPbsij/",
+                    "address": "တိုက် (၃၅)၊ အောင်သပြေလမ်း၊ ယုဇနပလာဇာအနောက်၊ မင်္ဂလာတောင်ညွန့်မြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/fJYNdfTEtdTMrk9c8"
+                },
+                {
+                    "name": "Pro Tech Care - တာမွေ",
+                    "url": "https://www.facebook.com/share/p/1AH23RNozE/",
+                    "address": "အမှတ် (၂၆၈)၊ ဗညားဒလလမ်းမ‌ပေါ်၊ တာမွှေမြို့နယ်။ (အောင်မင်္ဂလာမှတ်တိုင်အနီး)",
+                    "map": "https://maps.app.goo.gl/YWNAUy5tfn4rEiJC8"
+                },
+                {
+                    "name": "Together Bar & Restaurant - တာမွေ",
+                    "url": "https://www.facebook.com/share/p/1FXQobAnyr/",
+                    "address": "အမှတ် (၇၅၁)၊ မာလာနွယ်လမ်း၊ မေတ္တာညွန့်ရပ်ကွက်၊ တာမွှေမြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/mAFY63WVRCHWTsaE7"
+                },
+                {
+                    "name": "M Square Mobile - Tamwe တာမွေ",
+                    "url": "https://www.facebook.com/share/p/1Bnt5JdYdD/",
+                    "address": "အမှတ်(၃၂၈)၊ ဗညားဒလလမ်းမကြီး၊ သီတာမှတ်တိုင်ရှေ့တည့်တည့်၊ တာမွေမြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/16NQV1y9JS4Z7AT37"
+                },
+                {
+                    "name": "Years&Months BBQ Village - တာမွေမြို့နယ်",
+                    "url": "https://www.facebook.com/share/p/1EXyUtiEjC/",
+                    "address": "အမှတ် (၁၅)၊ ဩဘာလမ်းနှင့် ရွှေဘိုလမ်းထောင့်၊ ကျောက်မြောင်း၊ တာမွေမြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/jWXgaWsuvfqjFPXB8"
+                },
+                {
+                    "name": "Shwe Yadanar Snooker Club - တာမွေ",
+                    "url": "https://www.facebook.com/share/p/1Ch1YymFB8/",
+                    "address": "အမှတ် (၁၀)၊ ဓမ္မဝိဟာရလမ်း၊ ကျားကွက်သစ်ရပ်ကွက်၊ ကျောက်မြောင်း၊ တာမွေမြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/JunQuxyMANrMzy57A"
+                },
+                {
+                    "name": "ဧရာဝဏ် မင်္ဂလာခမ်းမ - သာကေတ",
+                    "url": "https://www.facebook.com/share/p/14yCDMCaX3/",
+                    "address": "အမှတ် (E2/296)၊ ဧရာဝဏ်လမ်းမပေါ်၊ သာကေတမြို့နယ်။ (ကျောင်းကွေ့မှတ်တိုင်အနီး)",
+                    "map": "https://maps.app.goo.gl/7ZHaMQDkwDzHgxRt9"
+                },
+                {
+                    "name": "Amy's Beauty & Nail Bar - သာကေတ",
+                    "url": "https://www.facebook.com/share/p/1DSkd8R7ko/",
+                    "address": "ထူပါရုံ (၆)လမ်းထိပ်၊ သာကေတမြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/sVm8iCMHZvMewm16A"
+                },
+                {
+                    "name": "Ringo Myanmar - ပုဇွန်ထောင်",
+                    "url": "https://www.facebook.com/share/p/1AYN9DoGpB/",
+                    "address": "အမှတ် (၁၈၉)၊ မြေညီထပ်၊ ဗိုလ်တထောင်ဘုရားလမ်း၊ အလယ်ဘလောက်၊ ပုဇွန်ထောင်မြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/9u6x5aP8sa3yaYUH6"
+                },
+                {
+                    "name": "Char Tate Mobile - လှည်းတန်း",
+                    "url": "https://www.facebook.com/share/p/1BugAGjVSv/",
+                    "address": "တိုက် (၅၈)၊ မြေညီထပ်၊ စံရိပ်ငြိမ် (၅)လမ်းထိပ်၊ အင်းစိန်လမ်းမပေါ်၊ အင်းစိန်မြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/fK9XJ446u1n7JvD6A"
+                },
+                {
+                    "name": "ZZ Mobile Service & Training - လှည်းတန်း",
+                    "url": "https://www.facebook.com/share/p/169dqTDes2/",
+                    "address": "တိုက် (၄၂-ဘီ)၊ ပထမထပ်၊ စံရိပ်ငြိမ် (၂)လမ်းထိပ်၊ အင်းစိန်လမ်းမပေါ်၊ အင်းစိန်မြို့နယ်။ (လှည်းတန်းမှတ်တိုင်ရှေ့)",
+                    "map": "https://maps.app.goo.gl/NPkmhm6aKUM13whi6"
+                },
+                {
+                    "name": "Nail Station - Sanchaung စမ်းချောင်း",
+                    "url": "https://www.facebook.com/share/p/19DS9VQiQc/",
+                    "address": "အမှတ် (၁၉)၊ သုခမိန်လမ်း၊ စမ်းချောင်းမြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/LCCvx3fXyygLbsWG7"
+                },
+                {
+                    "name": "Computer Doctor - လှိုင်",
+                    "url": "https://www.facebook.com/share/p/12FwcBJ2m5n/",
+                    "address": "တိုက် (၆)၊ အခန်း (၁၀၂)၊ ဗဟိုလ်လမ်း၊ မြကန်သာအိမ်ယာ၊ လှိုင်မြို့နယ်။ (သံလမ်းမှတ်တိုင်အနီး)",
+                    "map": "https://maps.app.goo.gl/asRa4v6zjdQnZ8JH7"
+                },
+                {
+                    "name": "Flamingo Beauty Salon - သင်္ဃန်းကျွန်း",
+                    "url": "https://www.facebook.com/share/p/18JTst9QMz/",
+                    "address": "အမှတ် (၂၉၉/ခ)၊ အောင်ရတနာလမ်း၊ ကြီးပွားရေးရပ်ကွက်၊ သင်္ဃန်းကျွန်းမြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/9bAzzxwUgStHiWqR8"
+                },
+                {
+                    "name": "CM-Myanmar Mobile - တောင်ဥက္ကလာပ",
+                    "url": "https://www.facebook.com/share/p/1BU9HtWUwZ/",
+                    "address": "(၆)ရပ်ကွက်၊ သုမင်္ဂလာလမ်းနှင့် သစ္စာလမ်းထောင့်၊ တောင်ဥက္ကလာပမြို့နယ်။ (စာတိုက်မှတ်တိုင်)",
+                    "map": "https://maps.app.goo.gl/bx4bNqMYY5dG1gzU7"
+                },
+                {
+                    "name": "Little Bee Bakery - တောင်ဥက္ကလာပ",
+                    "url": "https://www.facebook.com/share/p/199xTobbcJ/",
+                    "address": "အမှတ် (၂၆၂-ဘီ)၊ (၁၀)ရပ်ကွက်၊ မေတ္တာလမ်း၊ တောင်ဥက္ကလာပမြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/Pgpq3UdcRJdLmXqq5"
+                },
+                {
+                    "name": "Dear D'sert - တောင်ဥက္ကလာပ",
+                    "url": "https://www.facebook.com/share/p/1DUM86qzMN/",
+                    "address": "အမှတ် (၈၀၅)၊ ကျော်သူလမ်း၊ တောင်ဥက္ကလာပမြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/TqZqE5RzHsodgGxS7"
+                },
+                {
+                    "name": "Real Choice - မြောက်ဥက္ကလာပ",
+                    "url": "https://www.facebook.com/share/p/1A9Z8frMJV/",
+                    "address": "ဝေဘာဂီလမ်းမကြီး၊ (ည)ရပ်ကွက်၊ ပုလဲလမ်းထိပ်အနီး၊ မြောက်ဥက္ကလာပမြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/QRvNmAmwtTiKtBw86"
+                },
+                {
+                    "name": "Padonmar Rehabilitation Center - မြောက်ဥက္ကလာပ",
+                    "url": "https://www.facebook.com/share/p/15Z2wevuxd/",
+                    "address": "အမှတ် (၁၁)၊ ရွှေဝတ်မှုံအိမ်ယာ၊ (ဋ)ရပ်ကွက်၊ သုနန္ဒာလမ်း၊ မြောက်ဥက္ကလာပမြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/BChAJrQt5M38ykgs7"
+                },
+                {
+                    "name": "နဝရတ် ဆန်ဆီရောင်းဝယ်ရေး - ‌မြောက်ဒဂုံ",
+                    "url": "https://www.facebook.com/share/p/197HgWPfpM/",
+                    "address": "အမှတ် (၆၄၃)၊ (၄၆)ရပ်ကွက်၊ ပြည်ထောင်စုလမ်းမကြီးပေါ်၊ မြောက်ဒဂုံမြို့နယ်။ (အအေးဆိုင်မှတ်တိုင်အနီး)",
+                    "map": "https://maps.app.goo.gl/VqRWFACNDvqLHnMX6"
+                },
+                {
+                    "name": "Htun Brother Electronics - ယုဇနဥယျာဉ်မြို့တော်",
+                    "url": "https://www.facebook.com/share/p/1ADJf5uHwd/",
+                    "address": "တိုက်(၁၇)၊ အခန်း (၀၀၂)၊ (၁၀)လမ်း အေ၊ ယုဇနမြို့တော်၊ ဒဂုံဆိပ်ကမ်းမြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/mvp6dFyaRVvViSmS7"
+                },
+                {
+                    "name": "MIGT သင်တန်းကျောင်း - ယုဇနဥယျာဉ်မြို့တော်",
+                    "url": "https://www.facebook.com/share/p/12KsQToxsLJ/",
+                    "address": "(၁၅)လမ်း အေ၊ မြေညီထပ်၊ ယုဇနမြို့တော်၊ ဒဂုံဆိပ်ကမ်းမြို့နယ်။",
+                    "map": "https://maps.app.goo.gl/s3TjyuyZq2ouFQQu7"
+                },
+                {
+                    "name": "Great One အိမ်ခြံမြေ - ရွှေပြည်သာ",
+                    "url": "https://www.facebook.com/share/p/1DePYAvLKF/",
+                    "address": "အမှတ် (၂၆၁)၊ ဗိုလ်ချုပ်လမ်းမကြီး၊ (၅/၁)ရပ်ကွက်၊ ရွှေပြည်သာမြို့နယ်။ (သံလမ်းမှတ်တိုင်)",
+                    "map": "https://maps.app.goo.gl/3QxWJgZ92TuAkG8V9"
+                },
+                {
+                    "name": "Nail House by Grace - ရွှေပြည်သာ",
+                    "url": "https://www.facebook.com/share/p/15RCwf1McG/",
+                    "address": "အမှတ် (၁၆၄/က)၊ ဘုရင့်နောင်လမ်းမကြီး၊ ရွှေပြည်သာမြို့နယ်။ (ကားကြီးဂိတ်မှတ်တိုင်)",
+                    "map": "https://maps.app.goo.gl/MSV4fYPFtaCF8pVy7"
+                }
+            ]
+        }
+    ]
+}
