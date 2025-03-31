@@ -1,6 +1,6 @@
 import { Navigate } from "react-router";
 import { HomeLayout } from "../Layouts";
-import { EmergencyContacts, FreeRestaurant, Home } from "../Page";
+import { EmergencyContacts, FreeChargePhoneBattery, FreeRestaurant, Home } from "../Page";
 
 const HomeRouter = [
     {
@@ -22,6 +22,10 @@ const HomeRouter = [
             {
                 path: "free-restaurant",
                 element: <FreeRestaurant/>
+            },
+            {
+                path: "free-charge-phone-battery",
+                element: <FreeChargePhoneBattery/>
             }
         ]
     }

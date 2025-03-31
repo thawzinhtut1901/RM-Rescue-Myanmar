@@ -12,6 +12,7 @@ const Navigation = () => {
             <h1 onClick={() => navigate("/home")}>Home</h1>
             <h1 onClick={() => navigate("/emergency-contacts")}>Emergency Contacts</h1>
             <h1 onClick={() => navigate("/free-restaurant")}>Free Restaurant</h1>
+            <h1 onClick={() => navigate("/free-charge-phone-battery")}>Free Charge Phone Battery</h1>
         </div>
     </div>
   )
