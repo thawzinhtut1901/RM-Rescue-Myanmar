@@ -21,11 +21,11 @@ const Navigation = () => {
         </button>
 
         {/* Desktop menu */}
-        <div className='hidden md:flex gap-x-4 lg:gap-x-10 text-sm lg:text-base cursor-pointer'>
+        <div className='hidden md:flex gap-x-4 lg:gap-x-8 text-sm lg:text-base cursor-pointer'>
             <h1 onClick={() => navigate("/")} className={`hover:text-red-200 hover:underline ${location.pathname === "/home" ? "text-red-200 underline" : ""}`}>Home</h1>
-            <h1 onClick={() => navigate("/emergency-contacts")} className={`hover:text-red-200 hover:underline ${location.pathname === "/emergency-contacts" ? "text-red-200 underline" : ""}`}>Emergency Contacts</h1>
-            <h1 onClick={() => navigate("/free-restaurant")} className={`hover:text-red-200 hover:underline ${location.pathname === "/free-restaurant" ? "text-red-200 underline" : ""}`}>Free Restaurant</h1>
-            <h1 onClick={() => navigate("/free-charge-phone-battery")}  className={`hover:text-red-200 hover:underline ${location.pathname === "/free-charge-phone-battery" ? "text-red-200 underline" : ""}`}>Free Charge Phone Battery</h1>
+            <h1 onClick={() => navigate("/emergency-contacts")} className={`hover:text-red-200 hover:underline ${location.pathname === "/emergency-contacts" ? "text-red-200 underline" : ""}`}>Recuse Teams</h1>
+            <h1 onClick={() => navigate("/free-restaurant")} className={`hover:text-red-200 hover:underline ${location.pathname === "/free-restaurant" ? "text-red-200 underline" : ""}`}>Food Services</h1>
+            <h1 onClick={() => navigate("/free-charge-phone-battery")}  className={`hover:text-red-200 hover:underline ${location.pathname === "/free-charge-phone-battery" ? "text-red-200 underline" : ""}`}>Charging Stations</h1>
         </div>
 
         {/* Mobile menu */}
