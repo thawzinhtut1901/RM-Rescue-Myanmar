@@ -11,7 +11,7 @@ const App = () => {
         <Route path='/*' element={HomeRouting}/>
       </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
