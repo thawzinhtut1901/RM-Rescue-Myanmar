@@ -7,7 +7,7 @@ const FreeChargePhoneBattery = () => {
   return (
     <>
       <h2 className='my-10 font-semibold text-2xl text-center'>အရေးပေါ်ဖုန်းအားသွင်းနိုင်မည့် နေရာများ</h2>
-      <div className="gap-4 sm:gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 mx-auto my-4 sm:my-6 px-2 sm:px-4 max-w-screen-lg container">
+      <div className="gap-4 sm:gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 mx-auto my-4 sm:my-6 px-2 sm:px-4 container">
         {regions.map((region, index) => (
           <div
             key={index}
