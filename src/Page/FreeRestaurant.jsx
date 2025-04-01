@@ -5,7 +5,7 @@ const FreeRestaurant = () => {
   const restaurantData = restaurants.free_restaurants;
   return (
     <>
-      <h2 className='my-10 font-semibold text-2xl text-center cursor-default'>ငလျင်ဘေးဒုက္ခသည်များ အခမဲ့သုံးဆောင်နိုင်သော စားသောက်ဆိုင်များ</h2>
+      <h2 className='my-10 font-semibold text-lg md:text-2xl text-center cursor-default'>ငလျင်ဘေးဒုက္ခသည်များ အခမဲ့သုံးဆောင်နိုင်သော စားသောက်ဆိုင်များ</h2>
       <div className="gap-4 sm:gap-6 grid grid-cols-1 lg:grid-cols-1 mx-auto my-4 sm:my-6 px-2 sm:px-4 container">
         {
           restaurantData.map((region, index) => (
