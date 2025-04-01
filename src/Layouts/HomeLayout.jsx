@@ -9,7 +9,6 @@ const HomeLayout = () => {
         <Navigation/>
        
         <Outlet/>
-        <Footer/>
     </div>
   )
 }

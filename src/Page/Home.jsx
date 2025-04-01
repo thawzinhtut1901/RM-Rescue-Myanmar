@@ -1,7 +1,8 @@
-import React from "react";
-import homeImage from "../assets/images/home.png";
+import React, { useEffect } from "react";
 import { Utensils, UserPlus, Heart, Battery } from "lucide-react"
 import { Link } from "react-router";
+import axios from "axios";
+import StatisticCard from "../components/StatisticCard";
 
 const Home = () => {
   const services = [
@@ -33,27 +34,30 @@ const Home = () => {
       link: "/free-charge-phone-battery"
     },
   ]
-  
+  const [statistics, setStatistics] = React.useState({ deaths: 0, injuries: 0 });
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("https://raw.githubusercontent.com/ShweCana/burmeseEarthquake/main/statistics.csv?t=1743479226687&r=0.7060955324822338");
+        const lines = response.data.split('\n');
+        if (lines.length > 1) {
+          const [deaths, injuries] = lines[1].split(',').map(Number);
+          setStatistics({ deaths, injuries });
+        }
+      } catch (error) {
+        console.error('Error fetching statistics:', error);
+      }
+    };
+    fetchData();
+  }, []);
   return (
     <>
-      {/* <div className="flex md:flex-row flex-col justify-center items-center p-4 md:p-8">
-        <div className="flex md:flex-row flex-col items-center bg-white p-6 md:p-10 rounded-lg w-full max-w-5xl">
-          <img
-            src={homeImage}
-            alt="Emergency Kit"
-            className="md:mr-6 mb-4 md:mb-0 w-full md:w-1/2 h-auto object-contain"
-          />
-          <div>
-            <h2 className="font-bold text-red-600 text-xl md:text-2xl">
-              Emergency Natural Disasters Response – Connect, Respond, Save Lives
-            </h2>
-            <p className="mt-2 md:mt-4 text-gray-700 text-base md:text-lg">
-              Instantly connect with volunteer rescue teams and emergency services
-              during natural disasters.
-            </p>
-          </div>
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <StatisticCard number={statistics.deaths.toLocaleString()} label="သေဆုံးသူဦးရေ" />
+          <StatisticCard number={statistics.injuries.toLocaleString()} label="ဒဏ်ရာရသူဦးရေ" />
         </div>
-      </div> */}
+      </div>
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
