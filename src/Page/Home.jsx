@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Utensils, UserPlus, Heart, Battery } from "lucide-react"
+import { Utensils, UserPlus, Heart, Battery, PackageX } from "lucide-react"
 import { Link } from "react-router";
 import axios from "axios";
 import StatisticCard from "../components/StatisticCard";
@@ -34,6 +34,13 @@ const Home = () => {
       color: "bg-emerald-500",
       link: "/free-charge-phone-battery"
     },
+    {
+      title: "Dead Body Bags",
+      description: "အလောင်းအိတ်များ ရရှိနိုင်သော နေရာများ",
+      icon: <PackageX className="w-6 h-6 text-white" />,
+      color: "bg-purple-500",
+      link: "/deadbody-bag"
+    },
   ]
   const [statistics, setStatistics] = React.useState({ deaths: 0, injuries: 0 });
   useEffect(() => {
@@ -53,22 +60,22 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div className="mx-auto px-4 py-8 container">
-        <div className="gap-6 grid grid-cols-1 md:grid-cols-2">
+      <div className="mx-auto px-2 sm:px-4 py-4 sm:py-8 container">
+        <div className="gap-4 sm:gap-6 grid grid-cols-1 md:grid-cols-2">
           <StatisticCard number={statistics.deaths.toLocaleString()} label="သေဆုံးသူဦးရေ" />
           <StatisticCard number={statistics.injuries.toLocaleString()} label="ဒဏ်ရာရသူဦးရေ" />
         </div>
       </div>
-      <div className="mx-auto px-4 py-8 container">
-        <div className="gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto px-2 sm:px-4 py-4 sm:py-8 container">
+        <div className="gap-4 sm:gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service, index) => (
-            <div key={index} className="bg-white shadow-md p-6 rounded-lg transition-transform hover:translate-y-[-4px]">
+            <div key={index} className="bg-white shadow-md hover:shadow-lg p-4 sm:p-6 rounded-lg transition-transform hover:translate-y-[-4px]">
               <Link to={service.link}>
-                <div className={`${service.color} w-16 h-16 rounded-lg flex items-center justify-center mb-4`}>
+                <div className={`${service.color} w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4`}>
                   {service.icon}
                 </div>
-                <h3 className="mb-1 font-semibold text-xl">{service.title}</h3>
-                <p className="mb-2 text-gray-800">{service.description}</p>
+                <h3 className="mb-1 font-semibold text-lg sm:text-xl">{service.title}</h3>
+                <p className="mb-2 text-gray-800 text-sm sm:text-base">{service.description}</p>
               </Link>
             </div>
           ))}
