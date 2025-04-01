@@ -26,6 +26,7 @@ const Navigation = () => {
             <h1 onClick={() => navigate("/emergency-contacts")} className={`hover:text-red-200 hover:underline ${location.pathname === "/emergency-contacts" ? "text-red-200 underline" : ""}`}>Recuse Teams</h1>
             <h1 onClick={() => navigate("/free-restaurant")} className={`hover:text-red-200 hover:underline ${location.pathname === "/free-restaurant" ? "text-red-200 underline" : ""}`}>Food Services</h1>
             <h1 onClick={() => navigate("/free-charge-phone-battery")}  className={`hover:text-red-200 hover:underline ${location.pathname === "/free-charge-phone-battery" ? "text-red-200 underline" : ""}`}>Charging Stations</h1>
+            <h1 onClick={() => navigate("/donation")}  className={`hover:text-red-200 hover:underline ${location.pathname === "/donation" ? "text-red-200 underline" : ""}`}>Donation Organziations</h1>
         </div>
 
         {/* Mobile menu */}
@@ -34,6 +35,7 @@ const Navigation = () => {
             <h1 onClick={() => {navigate("/emergency-contacts"); setIsOpen(false)}} className={`hover:text-red-200 hover:underline ${location.pathname === "/emergency-contacts" ? "text-red-200 underline" : ""}`}>Emergency Contacts</h1>
             <h1 onClick={() => {navigate("/free-restaurant"); setIsOpen(false)}} className={`hover:text-red-200 hover:underline ${location.pathname === "/free-restaurant" ? "text-red-200 underline" : ""}`}>Free Restaurant</h1>
             <h1 onClick={() => {navigate("/free-charge-phone-battery"); setIsOpen(false)}}  className={`hover:text-red-200 hover:underline ${location.pathname === "/free-charge-phone-battery" ? "text-red-200 underline" : ""}`}>Free Charge Phone Battery</h1>
+            <h1 onClick={() => {navigate("/donation"); setIsOpen(false)}}  className={`hover:text-red-200 hover:underline ${location.pathname === "/donation" ? "text-red-200 underline" : ""}`}>Donation Organziations</h1>
         </div>
     </div>
   )

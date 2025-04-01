@@ -1,6 +1,6 @@
 import { Navigate } from "react-router";
 import { HomeLayout } from "../Layouts";
-import { EmergencyContacts, FreeChargePhoneBattery, FreeRestaurant, Home } from "../Page";
+import { Donation, EmergencyContacts, FreeChargePhoneBattery, FreeRestaurant, Home } from "../Page";
 
 const HomeRouter = [
     {
@@ -26,6 +26,10 @@ const HomeRouter = [
             {
                 path: "free-charge-phone-battery",
                 element: <FreeChargePhoneBattery/>
+            },
+            {
+                path: "donation",
+                element:<Donation/>
             }
         ]
     }

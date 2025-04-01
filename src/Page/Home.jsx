@@ -8,27 +8,28 @@ const Home = () => {
     {
       title: "Food Services",
       description: "ငလျင်ဘေးဒုက္ခသည်များ အခမဲ့သုံးဆောင်နိုင်သော စားသောက်ဆိုင်များ",
-      icon: <Utensils className="h-6 w-6 text-white" />,
+      icon: <Utensils className="w-6 h-6 text-white" />,
       color: "bg-green-500",
       link: "/free-restaurant"
     },
     {
       title: "Rescue Teams",
       description: "အရေးပေါ် ကူညီကယ်ဆယ်ရေး နံပါတ်များ",
-      icon: <UserPlus className="h-6 w-6 text-white" />,
+      icon: <UserPlus className="w-6 h-6 text-white" />,
       color: "bg-yellow-500",
       link: "/emergency-contacts"
     },
     {
       title: "Donation Organizations",
       description: "ငလျင်ဘေးအတွက်ယုံကြည်စိတ်ချစွာလှူနိုင်သောအဖွဲ့အစည်းများ",
-      icon: <Heart className="h-6 w-6 text-white" />,
+      icon: <Heart className="w-6 h-6 text-white" />,
       color: "bg-red-500",
+      link: "/donation"
     },
     {
       title: "Charging Stations",
       description: "အရေးပေါ်ဖုန်းအားသွင်းနိုင်မည့် နေရာများ",
-      icon: <Battery className="h-6 w-6 text-white" />,
+      icon: <Battery className="w-6 h-6 text-white" />,
       color: "bg-emerald-500",
       link: "/free-charge-phone-battery"
     },
@@ -54,16 +55,16 @@ const Home = () => {
           </div>
         </div>
       </div> */}
-      <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="mx-auto px-4 py-8 container">
+        <div className="gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md p-6 transition-transform hover:translate-y-[-4px]">
+            <div key={index} className="bg-white shadow-md p-6 rounded-lg transition-transform hover:translate-y-[-4px]">
               <Link to={service.link}>
                 <div className={`${service.color} w-16 h-16 rounded-lg flex items-center justify-center mb-4`}>
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-semibold mb-1">{service.title}</h3>
-                <p className="text-gray-800 mb-2">{service.description}</p>
+                <h3 className="mb-1 font-semibold text-xl">{service.title}</h3>
+                <p className="mb-2 text-gray-800">{service.description}</p>
               </Link>
             </div>
           ))}
