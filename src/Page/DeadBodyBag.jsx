@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import dead_body_bags from "../data/dead-body-bags.json"
 
 const DeadBodyBag = () => {
-  const bags = dead_body_bags.dead_body_bags;
+  const [searchQuery, setSearchQuery] = useState('');
+  const bags = dead_body_bags.dead_body_bags.filter(bag =>
+    bag.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
   return (
     <>
       <h2 className='my-10 font-semibold text-lg md:text-2xl text-center cursor-default'>အလောင်းအိတ်များ ရရှိနိုင်သော နေရာများ</h2>
+      <div className="mx-auto mb-6 px-2 sm:px-4 container">
+        <input
+          type="text"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          placeholder="Search Deadbody Bags"
+          className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+        />
+      </div>
       <div className="gap-4 sm:gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto my-4 sm:my-6 px-2 sm:px-4 container">
         {bags.map((bag, index) => (
           <a

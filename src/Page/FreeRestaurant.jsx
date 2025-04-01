@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import restaurants from "../data/restaurants.json"
 
 const FreeRestaurant = () => {
-  const restaurantData = restaurants.free_restaurants;
+  const [searchTerm, setSearchTerm] = useState('');
+  const restaurantData = restaurants.free_restaurants.map(region => ({
+    ...region,
+    restaurants: region.restaurants.filter(restaurant =>
+      restaurant.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      restaurant.address.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      region.region.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+  })).filter(region => region.restaurants.length > 0);
   return (
     <>
       <h2 className='my-10 font-semibold text-lg md:text-2xl text-center cursor-default'>ငလျင်ဘေးဒုက္ခသည်များ အခမဲ့သုံးဆောင်နိုင်သော စားသောက်ဆိုင်များ</h2>
+      <div className="mx-auto mb-6 px-2 sm:px-4 container">
+        <input
+          type="text"
+          placeholder="ဆိုင်အမည်၊ လိပ်စာ (သို့) မြို့နယ်ဖြင့် ရှာဖွေပါ"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+        />
+      </div>
       <div className="gap-4 sm:gap-6 grid grid-cols-1 lg:grid-cols-1 mx-auto my-4 sm:my-6 px-2 sm:px-4 container">
         {
           restaurantData.map((region, index) => (
