@@ -11,6 +11,7 @@ const FreeRestaurant = () => {
       region.region.toLowerCase().includes(searchTerm.toLowerCase())
     )
   })).filter(region => region.restaurants.length > 0);
+  
   return (
     <>
       <h2 className='my-10 font-semibold text-lg md:text-2xl text-center cursor-default'>ငလျင်ဘေးဒုက္ခသည်များ အခမဲ့သုံးဆောင်နိုင်သော စားသောက်ဆိုင်များ</h2>
@@ -20,7 +21,7 @@ const FreeRestaurant = () => {
           placeholder="ဆိုင်အမည်၊ လိပ်စာ (သို့) မြို့နယ်ဖြင့် ရှာဖွေပါ"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+          className="px-4 py-2 border border-gray-300 focus:border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
         />
       </div>
       <div className="gap-4 sm:gap-6 grid grid-cols-1 lg:grid-cols-1 mx-auto my-4 sm:my-6 px-2 sm:px-4 container">
