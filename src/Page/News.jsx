@@ -1,29 +1,34 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { supabase } from '../config/supabase'
 
 export default function News() {
-  const newsData = [
-    {
-      id: 1,
-      title: "Emergency Aid Reaches Remote Areas",
-      description: "Humanitarian organizations successfully deliver critical supplies to communities in need.",
-      date: "2024-01-15",
-      image: "https://placehold.co/600x400"
-    },
-    {
-      id: 2,
-      title: "Community Support Networks Expand",
-      description: "Local volunteers establish new support centers to assist displaced families.",
-      date: "2024-01-14",
-      image: "https://placehold.co/600x400"
-    },
-    {
-      id: 3,
-      title: "Medical Teams Provide Essential Care",
-      description: "Mobile medical units reach remote villages, offering vital healthcare services.",
-      date: "2024-01-13",
-      image: "https://placehold.co/600x400"
-    }
-  ];
+  const [newsData, setNewsData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchNews = async () => {
+      try {
+        const { data, error } = await supabase
+          .from('news')
+          .select('*')
+          .order('created_at', { ascending: false });
+
+        if (error) throw error;
+        setNewsData(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchNews();
+  }, []);
+  console.log(newsData);
+
+  if (loading) return <div className="container mx-auto px-4 py-8 text-center">Loading...</div>;
+  if (error) return <div className="container mx-auto px-4 py-8 text-center text-red-600">Error: {error}</div>;
 
   return (
     <div className="container mx-auto px-4 py-8">
