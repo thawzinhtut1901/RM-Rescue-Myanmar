@@ -1,0 +1,34 @@
+{
+    "useful_apps": [
+        {
+            "name": "MyShake",
+            "description": "ကယ်လီဖိုးနီးယားတက္ကသိုလ် (UC Berkeley) မှ တီထွင်ထားသော App | ငလျင်လှုပ်မှုကို ခံစားရသည့်အသုံးပြုသူများထံမှ အချက်အလက်များ စုဆောင်းနိုင် | အနီးအနားတွင် ငလျင်လှုပ်ခြင်းရှိလျှင် ကြိုတင်သတင်းပေးနိုင်",
+            "url": "https://play.google.com/store/search?q=MyShake&c=apps&hl=en"
+        },
+        {
+            "name": "Earthquake Network",
+            "description": "Real-time ငလျင်သတင်းများကို Push Notification ဖြင့် ပေးပို့နိုင် | မိမိတည်နေရာအနီး ငလျင်လှုပ်မှုများကို သိရှိနိုင် | Offline မှတ်တမ်းတင်နိုင်မှုပါဝင်",
+            "url": "https://play.google.com/store/search?q=Earthquake%20Network&c=apps&hl=en"
+        },
+        {
+            "name": "LastQuake",
+            "description": "European-Mediterranean Seismological Centre (EMSC) မှ ထုတ်လုပ်ထား | ငလျင်ဖြစ်ပွားမှုကို လူများက တင်ပြနိုင်ပြီး အချိန်နှင့်တပြေးညီ အချက်အလက်များရရှိနိုင် | ငလျင်သတင်းများကို မိမိတည်နေရာအရ ရယူနိုင်",
+            "url": "https://play.google.com/store/search?q=LastQuake&c=apps&hl=en"
+        },
+        {
+            "name": "LastQuake",
+            "description": "European-Mediterranean Seismological Centre (EMSC) မှ ထုတ်လုပ်ထား | ငလျင်ဖြစ်ပွားမှုကို လူများက တင်ပြနိုင်ပြီး အချိန်နှင့်တပြေးညီ အချက်အလက်များရရှိနိုင် | ငလျင်သတင်းများကို မိမိတည်နေရာအရ ရယူနိုင်",
+            "url": "https://play.google.com/store/search?q=LastQuake&c=apps&hl=en"
+        },
+        {
+            "name": "Volcanoes & Earthquakes",
+            "description": "ငလျင်သာမက မီးတောင်ပေါက်ကွဲခြင်းများပါ ကြည့်ရှုနိုင် | အနီးအနားတွင် ငလျင်ဖြစ်ပွားခြင်းကို Radar ဖြင့် တိုင်းတာနိုင် | Global Map နှင့် မြေပုံပေါ်တွင် အချက်အလက်များကြည့်ရှုနိုင်",
+            "url": "https://play.google.com/store/search?q=Volcanoes%20%26%20Earthquakes&c=apps&hl=en"
+        },
+        {
+            "name": "My EarthQuake Alerts",
+            "description": "Push Notifications ဖြင့် ကြိုတင်သတင်းပေးပို့နိုင် | Notifications sound customizeလုပ်နိုင် | Region focus selectionပါရှိ | ငလျင်လှုပ်သွားခဲ့သည့် အချိန်အတိအကျဖော်ပြနိုင်",
+            "url": "https://play.google.com/store/search?q=My%20EarthQuake%20Alerts&c=apps&hl=en"
+        }
+    ]
+}
