@@ -28,6 +28,7 @@ const EmergencyContacts = () => {
             className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
           />
         </div>
+        
         <div className="gap-4 sm:gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto my-4 sm:my-6">
           {filteredContacts.map((region, index) => (
             <div
