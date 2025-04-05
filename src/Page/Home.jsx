@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Utensils, UserPlus, Heart, Battery, PackageX } from "lucide-react"
+import { Utensils, UserPlus, Heart, Battery, PackageX, Smartphone } from "lucide-react"
 import { Link } from "react-router";
 import axios from "axios";
 import StatisticCard from "../components/StatisticCard";
@@ -40,6 +40,13 @@ const Home = () => {
       icon: <PackageX className="w-6 h-6 text-white" />,
       color: "bg-purple-500",
       link: "/deadbody-bag"
+    },
+    {
+      title: "Useful Applications",
+      description: "ငလျင်အတွက် အသုံးဝင်သော App များ",
+      icon: <Smartphone className="w-6 h-6 text-white" />,
+      color: "bg-cyan-500",
+      link: "/useful-apps"
     },
   ]
   const [statistics, setStatistics] = React.useState({ deaths: 0, injuries: 0 });

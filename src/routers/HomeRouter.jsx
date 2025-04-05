@@ -1,6 +1,7 @@
 import { Navigate } from "react-router";
 import { HomeLayout } from "../Layouts";
 import { DeadBodyBag, Donation, EmergencyContacts, FreeChargePhoneBattery, FreeRestaurant, Home, News } from "../Page";
+import UsefulApp from "../Page/UsefulApp";
 
 const HomeRouter = [
     {
@@ -34,6 +35,10 @@ const HomeRouter = [
             {
                 path: "deadbody-bag",
                 element: <DeadBodyBag/>
+            },
+            {
+                path: "useful-apps",
+                element: <UsefulApp/>
             },
             {
                 path: "news",
