@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import emergency_contacts from "./data/contact.json"
+import React from 'react'
 import { HomeRouter } from './routers'
 import { Route, Routes, useRoutes } from 'react-router'
 
 const App = () => {
-  const HomeRouting = useRoutes(HomeRouter);''
+  const HomeRouting = useRoutes(HomeRouter);
   return (
     <div>
       <Routes>
