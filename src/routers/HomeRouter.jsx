@@ -1,5 +1,5 @@
 import { HomeLayout } from "../Layouts";
-import { DeadBodyBag, Donation, EmergencyContacts, FreeChargePhoneBattery, FreeRestaurant, Home, News } from "../Page";
+import { DeadBodyBag, Donation, EmergencyContacts, FreeChargePhoneBattery, FreeRestaurant, Home, News, NewsDetail, CreateNews } from "../Page";
 import UsefulApp from "../Page/UsefulApp";
 
 const HomeRouter = [
@@ -38,6 +38,14 @@ const HomeRouter = [
             {
                 path: "news",
                 element:<News/>
+            },
+            {
+                path: "news/:id",
+                element:<NewsDetail/>
+            },
+            {
+                path: "news/create",
+                element:<CreateNews/>
             }
         ]
     }

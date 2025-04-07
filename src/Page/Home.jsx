@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Utensils, UserPlus, Heart, Battery, PackageX, Smartphone } from "lucide-react"
+import { Utensils, UserPlus, Heart, Battery, PackageX, Smartphone, Newspaper } from "lucide-react"
 import { Link } from "react-router";
 import axios from "axios";
 import StatisticCard from "../components/StatisticCard";
@@ -47,6 +47,13 @@ const Home = () => {
       icon: <Smartphone className="w-6 h-6 text-white" />,
       color: "bg-cyan-500",
       link: "/useful-apps"
+    },
+    {
+      title: "News",
+      description: "ငလျင်ဘေးနှင့်ဆိုင်သော သတင်းများ",
+      icon: <Newspaper className="w-6 h-6 text-white" />,
+      color: "bg-indigo-500",
+      link: "/news"
     },
   ]
   const [statistics, setStatistics] = React.useState({ deaths: 0, injuries: 0 });
