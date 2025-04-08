@@ -1,5 +1,5 @@
-import React from 'react'
-import useful_apps from '../data/useful-apps.json'
+import React from 'react';
+import useful_apps from '../data/useful-apps.json';
 
 export default function UsefulApp() {
   const apps = useful_apps.useful_apps;
