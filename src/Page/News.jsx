@@ -43,26 +43,32 @@ export default function News() {
         </Link>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {newsData.map((news) => (
-          <div key={news.id} className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-            <div className="p-6">
-              <h2 className="text-xl font-semibold text-gray-800 mb-2">{news.title}</h2>
-              <p className="text-gray-500 text-sm mb-2">
-                Posted on: {new Date(news.created_at).toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric'
-                })}
-              </p>
-              <p className="text-gray-600 mb-4">
-                {news.description.length > 150 ? `${news.description.substring(0, 150)}...` : news.description}
-              </p>
-              <Link to={`/news/${news.id}`} className="bg-red-500 hover:bg-red-600 text-white font-semibold text-sm py-2 px-3 rounded-md">
-                ပိုမိုကြည့်ရှုရန်
-              </Link>
-            </div>
+        {newsData.length === 0 ? (
+          <div className="col-span-full text-center text-gray-500 py-8">
+            သတင်းများမရှိသေးပါ။
           </div>
-        ))}
+        ) : (
+          newsData.map((news) => (
+            <div key={news.id} className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+              <div className="p-6">
+                <h2 className="text-xl font-semibold text-gray-800 mb-2">{news.title}</h2>
+                <p className="text-gray-500 text-sm mb-2">
+                  Posted on: {new Date(news.created_at).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </p>
+                <p className="text-gray-600 mb-4">
+                  {news.description.length > 150 ? `${news.description.substring(0, 150)}...` : news.description}
+                </p>
+                <Link to={`/news/${news.id}`} className="bg-red-500 hover:bg-red-600 text-white font-semibold text-sm py-2 px-3 rounded-md">
+                  ပိုမိုကြည့်ရှုရန်
+                </Link>
+              </div>
+            </div>
+          ))
+        )}
       </div>
     </div>
   )
