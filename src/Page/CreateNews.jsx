@@ -60,6 +60,7 @@ export default function CreateNews() {
             name="title"
             value={formData.title}
             onChange={handleChange}
+            placeholder='သတင်းခေါင်းစဉ်'
             required
             className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
           />
@@ -75,6 +76,7 @@ export default function CreateNews() {
             value={formData.description}
             onChange={handleChange}
             required
+            placeholder='သတင်းအချက်အလက်အပြည့်အစုံ'
             rows="4"
             className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
           />
@@ -89,6 +91,7 @@ export default function CreateNews() {
             id="url"
             name="url"
             value={formData.url}
+            placeholder='မူလင်းလင့်'
             onChange={handleChange}
             className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
           />

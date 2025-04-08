@@ -21,7 +21,7 @@ export default function UsefulApp() {
               <p className="text-gray-600 text-sm sm:text-base">{app.description}</p>
             </div>
             <div className="mt-4">
-              <span className="inline-block bg-cyan-500 hover:bg-cyan-600 px-4 py-2 rounded-lg text-white transition-colors duration-200">
+              <span className="inline-block bg-red-500 hover:bg-red-600 px-4 py-2 rounded-lg text-white transition-colors duration-200">
                 Download App
               </span>
             </div>
