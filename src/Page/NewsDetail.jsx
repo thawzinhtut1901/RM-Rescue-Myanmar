@@ -78,7 +78,7 @@ export default function NewsDetail() {
         {
             news.url && (
                 <div className='mt-5 text-blue-600 underline'>
-                    <a href={news.url}>Original Post</a>
+                    <a href={news.url} target='_blank'>Original Post</a>
                 </div>
             )
         }
