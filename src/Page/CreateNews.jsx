@@ -68,7 +68,7 @@ export default function CreateNews() {
 
         <div>
           <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
-            ဖော်ပြချက်
+            အချက်အလက်
           </label>
           <textarea
             id="description"
@@ -84,14 +84,14 @@ export default function CreateNews() {
 
         <div>
           <label htmlFor="url" className="block text-sm font-medium text-gray-700 mb-1">
-            မူးလင်းလင့်
+            မူရင်းလင့်
           </label>
           <input
             type="url"
             id="url"
             name="url"
             value={formData.url}
-            placeholder='မူလင်းလင့်'
+            placeholder='မူရင်းလင့်'
             onChange={handleChange}
             className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
           />
@@ -109,7 +109,7 @@ export default function CreateNews() {
                 disabled={loading}
                 className={`flex-1 py-2 px-4 rounded-lg text-white font-medium ${loading ? 'bg-gray-400 cursor-not-allowed' : 'bg-red-600 hover:bg-red-700'}`}
             >
-                {loading ? 'ထည့်သွင်းနေသည်...' : 'ထည့်မည်'}
+                {loading ? 'ထည့်သွင်းနေသည်...' : 'ထည့်သွင်းမည်'}
             </button>
         </div>
       </form>
