@@ -1,11 +1,12 @@
-import React, { useState } from 'react'
-import dead_body_bags from "../data/dead-body-bags.json"
+import React, { useState } from 'react';
+import dead_body_bags from "../data/dead-body-bags.json";
 
 const DeadBodyBag = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const bags = dead_body_bags.dead_body_bags.filter(bag =>
     bag.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
   return (
     <>
       <h2 className='my-10 font-semibold text-lg md:text-2xl text-center cursor-default'>အလောင်းအိတ်များ ရရှိနိုင်သော နေရာများ</h2>
@@ -42,4 +43,4 @@ const DeadBodyBag = () => {
   )
 }
 
-export default DeadBodyBag
+export default DeadBodyBag;
